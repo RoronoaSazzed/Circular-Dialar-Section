@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dialar Section Dashboard</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto Condensed", sans-serif;
+      }
+
+      .main__box {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: center;
+        background-color: #131313;
+        overflow: hidden;
+      }
+
+      .dialar__section {
+        width: 25%;
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .img-responsive {
+        width: 100%;
+        max-width: 700px;
+      }
+
+      .dialar {
+        position: absolute;
+        top: 50%;
+        transform-origin: center;
+        transform: translate(-50%, -50%) rotate(0deg);
+        animation: rotateDial 100s linear infinite;
+      }
+
+      .dialar:hover {
+        cursor: grab;
+      }
+
+      @keyframes rotateDial {
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+
+      .view__box {
+        width: 75%;
+        height: 100vh;
+        overflow-y: scroll;
+        padding: 15vh 0;
+      }
+
+      .project__box {
+        height: 70vh;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        width: 100%;
+        padding: 30px;
+        overflow: hidden;
+      }
+
+      .project__box:hover {
+        cursor: pointer;
+      }
+
+      .project__name {
+        font-size: 30px;
+        color: white;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      .project__details__box {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+
+      .epic__spring__section {
+        padding: 15px;
+        margin-right: 15px;
+      }
+
+      .epic__name {
+        font-size: 24px;
+        color: white;
+        font-weight: 100;
+        text-transform: capitalize;
+      }
+
+      .spring__name {
+        font-size: 20px;
+        color: white;
+        font-weight: 100;
+        text-transform: capitalize;
+      }
+
+      .spring1 {
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+
+      .spring2 {
+        margin-top: 15px;
+        margin-left: 40px;
+      }
+
+      .spring3 {
+        margin-top: 15px;
+        margin-left: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main__box">
+      <div class="dialar__section">
+        <img class="dialar img-responsive" src="circular-dial.svg" alt="" />
+      </div>
+
+      <div class="view__box">
+        <!-- Project Box -->
+
+        <div class="project__1 project__box">
+          <div class="project__title">
+            <h3 class="project__name">project 1</h3>
+          </div>
+
+          <div class="project__details__box">
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic One</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic Two</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic Three</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic Four</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic Five</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Box -->
+
+        <div class="project__2 project__box">
+          <div class="project__title">
+            <h3 class="project__name">project 2</h3>
+          </div>
+
+          <div class="project__details__box">
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic One</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic Two</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic Three</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic Four</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Box -->
+
+        <div class="project__3 project__box">
+          <div class="project__title">
+            <h3 class="project__name">project 3</h3>
+          </div>
+
+          <div class="project__details__box">
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic One</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+
+            <div class="epic__spring__section">
+              <div class="project__branch">
+                <h3 class="epic__name">Epic Two</h3>
+              </div>
+
+              <div class="project__sub__branch">
+                <h3 class="spring__name spring1">Spring 1</h3>
+                <h3 class="spring__name spring2">Spring 2</h3>
+                <h3 class="spring__name spring3">Spring 3</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
